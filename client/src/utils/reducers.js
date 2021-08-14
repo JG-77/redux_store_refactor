@@ -11,10 +11,8 @@ import {
   TOGGLE_CART,
 } from './actions';
 
-// TODO: To get a better understand of how a reducer works - add comments to the various actions in the reducer
 export const reducer = (state, action) => {
   switch (action.type) {
-    // TODO: Add a comment describing the functionality of the UPDATE_PRODUCTS case
     // updating the products
     case UPDATE_PRODUCTS:
       return {
@@ -34,7 +32,7 @@ export const reducer = (state, action) => {
         ...state,
         cart: [...state.cart, ...action.products],
       };
-    // TODO: Add a comment describing the functionality of the UPDATE_CART_QUANTITY case
+
     // match up the action id with the all product ids to get updated quantities
     case UPDATE_CART_QUANTITY:
       return {
@@ -48,7 +46,6 @@ export const reducer = (state, action) => {
         }),
       };
 
-    // TODO: Add a comment describing the functionality of the REMOVE_FROM_CART case
     // remove items by by updating the state when we match up action and product ids
     case REMOVE_FROM_CART:
       let newState = state.cart.filter((product) => {
@@ -86,7 +83,6 @@ export const reducer = (state, action) => {
         currentCategory: action.currentCategory,
       };
 
-    // TODO: Add a comment describing what the default case is for
     // returns a default state in case of error
     default:
       return state;
@@ -96,3 +92,5 @@ export const reducer = (state, action) => {
 export function useProductReducer(initialState) {
   return useReducer(reducer, initialState);
 }
+
+export default reducer;
