@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-//set up MongoDb
+//set up MongoDb.
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/mernshopping',
   {
