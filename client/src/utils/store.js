@@ -2,6 +2,7 @@ import { createStore } from 'redux';
 import reducers from './reducers';
 
 const initialState = {
+  //transfered initial state values from GlobalState file
   products: [],
   cart: [],
   cartOpen: false,
