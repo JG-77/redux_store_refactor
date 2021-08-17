@@ -6,7 +6,7 @@
 
 [GitHub Repo](https://github.com/JG-77/redux_store_refactor.git)
 
-[Redux Store Heroku Page]()
+[Redux Store Heroku Page](https://redux-store-refactor.herokuapp.com/)
 
 ## Application Screenshots
 
